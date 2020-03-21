@@ -1,0 +1,86 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/feeLabel"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_fee_margin_top"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/layout_fee_margin"
+            android:text="@string/label_tx_fee_low"
+            android:textSize="@dimen/layout_fee_radio_text_size" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:layout_margin="@dimen/layout_fee_margin"
+            android:text="@string/label_tx_fee_medium"
+            android:textSize="@dimen/layout_fee_radio_text_size" />
+
+        <RadioButton
+            android:id="@+id/radioHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/layout_fee_margin"
+            android:text="@string/label_tx_fee_high"
+            android:textSize="@dimen/layout_fee_radio_text_size" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/feeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/layout_fee_text"
+        android:text="@string/label_tx_fee_text"
+        android:layout_margin="@dimen/layout_fee_margin"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fee"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+    <TextView
+        android:id="@+id/fee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/layout_fee_text"
+        android:text="@string/label_tx_fee_amount_btc_no_fee"
+        android:layout_margin="@dimen/layout_fee_margin"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        app:layout_constraintEnd_toStartOf="@+id/feeCurrency"
+        app:layout_constraintStart_toEndOf="@+id/feeText" />
+
+    <TextView
+        android:id="@+id/feeCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/layout_fee_text"
+        android:layout_margin="@dimen/layout_fee_margin"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        app:layout_constraintStart_toEndOf="@id/fee"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/label_tx_fee_amount_currency_no_fee"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

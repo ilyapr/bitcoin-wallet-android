@@ -1,0 +1,7 @@
+/local.properties
+/keystore-debug.jks
+/keystore-release.jks
+/.idea/
+/.gradle/
+/build/
+*.iml

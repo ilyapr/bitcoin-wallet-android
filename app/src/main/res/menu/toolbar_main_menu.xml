@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_change_pin"
+        android:orderInCategory="10"
+        app:showAsAction="never"
+        android:title="@string/menu_change_pin" />
+
+    <item
+        android:id="@+id/menu_backup_wallet"
+        android:orderInCategory="20"
+        app:showAsAction="never"
+        android:title="@string/menu_backup_wallet" />
+
+    <item
+        android:id="@+id/menu_restore_wallet"
+        android:orderInCategory="30"
+        app:showAsAction="never"
+        android:title="@string/menu_restore_wallet" />
+
+    <item
+        android:id="@+id/menu_main_about"
+        android:orderInCategory="40"
+        app:showAsAction="never"
+        android:title="@string/menu_about" />
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7700</color>
+    <color name="colorPrimaryDark">#D56504</color>
+    <color name="colorAccent">#E97B1C</color>
+    <color name="navigationBarColor">@color/toolbar</color>
+    <color name="toolbar">@color/statusBar</color>
+    <color name="statusBar">#1D1A1A</color>
+
+    <color name="transactionZero">#479BDF</color>
+    <color name="transactionPlus">#48AD45</color>
+    <color name="transactionMinus">#F8501D</color>
+    <color name="transactionDelimiter">#B4BEB9B8</color>
+
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="bullet">#FF9800</color>
+
+    <color name="statusSynced">#29B62E</color>
+    <color name="statusSyncing">#4AA0C7</color>
+    <color name="statusNotSynced">#DB291D</color>
+
+    <color name="scannerAutoFocusButtonColor">#FFFFFF</color>
+    <color name="scannerFlashButtonColor">#FFFFFF</color>
+    <color name="scannerFrameColor">#FFFFFF</color>
+    <color name="scannerMaskColor">#77000000</color>
+    <color name="refreshIcon">#FFFFFF</color>
+    <color name="button_scan_color">#FFFFFF</color>
+</resources>

@@ -1,0 +1,81 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="titleSetupSeed">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">fonts/Ubuntu-Bold.ttf</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">fonts/Ubuntu-Bold.ttf</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">fonts/Ubuntu-Bold.ttf</item>
+    </style>
+
+    <style name="seedData">
+        <item name="android:textSize">@dimen/font_size_default</item>
+    </style>
+
+    <style name="pinButton" parent="@style/Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontPath">fonts/Ubuntu-Bold.ttf</item>
+        <item name="android:layout_margin">@dimen/pin_keyboard_button_margin</item>
+    </style>
+
+    <style name="actionButton" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/buttonTextColor</item>
+        <item name="android:textSize">@dimen/font_size_action_button</item>
+    </style>
+
+    <style name="balance">
+        <item name="android:textSize">@dimen/fragment_balance_text</item>
+        <item name="fontPath">fonts/Ubuntu-Bold.ttf</item>
+        <item name="android:layout_marginTop">@dimen/fragment_balance_margin_top</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="balanceCurrency">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:layout_marginTop">@dimen/fragment_balance_currency_margin_top</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="status">
+        <item name="android:textSize">@dimen/font_size_status</item>
+    </style>
+
+    <style name="link">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="dialogAboutText">
+        <item name="android:textSize">@dimen/font_size_default</item>
+        <item name="android:layout_margin">@dimen/dialog_about_text_margin</item>
+    </style>
+
+    <style name="dialogAboutAddress" parent="dialogAboutText">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>

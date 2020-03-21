@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">https://btc.horizontalsystems.xyz/apg</domain>
+        <domain includeSubdomains="true">btc-testnet.horizontalsystems.xyz</domain>
+
+        <domain includeSubdomains="true">seed.bitcoin.sipa.be</domain>
+        <domain includeSubdomains="true">dnsseed.bluematt.me</domain>
+        <domain includeSubdomains="true">dnsseed.bitcoin.dashjr.org</domain>
+        <domain includeSubdomains="true">seed.bitcoinstats.com</domain>
+        <domain includeSubdomains="true">seed.bitcoin.jonasschnelli.ch</domain>
+        <domain includeSubdomains="true">seed.btc.petertodd.org</domain>
+        <domain includeSubdomains="true">seed.bitcoin.sprovoost.nl</domain>
+
+        <domain includeSubdomains="true">testnet-seed.bitcoin.petertodd.org</domain>
+        <domain includeSubdomains="true">testnet-seed.bitcoin.jonasschnelli.ch</domain>
+        <domain includeSubdomains="true">testnet-seed.bluematt.me</domain>
+        <domain includeSubdomains="true">testnet-seed.bitcoin.schildbach.de</domain>
+        <domain includeSubdomains="true">bitcoin-testnet.bloqseeds.net</domain>
+    </domain-config>
+</network-security-config>

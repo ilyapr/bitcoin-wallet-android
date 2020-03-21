@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dialog_tx_info_margin">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_title"
+        style="@style/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amountBTCLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_amount"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:layout_marginTop="@dimen/dialog_tx_info_first_row_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_tx_info_value_margin_left"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:text="0.0"
+        android:layout_marginTop="@dimen/dialog_tx_info_first_row_margin_top"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toRightOf="@id/amountBTCLabel"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txFeeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_fee"
+        android:textSize="@dimen/dialog_tx_info_text"
+        app:layout_constraintTop_toBottomOf="@id/amount"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_tx_info_value_margin_left"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:text="0.00"
+        app:layout_constraintTop_toBottomOf="@id/amount"
+        app:layout_constraintLeft_toRightOf="@id/txFeeLabel"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/addressFromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_address_from"
+        android:textSize="@dimen/dialog_tx_info_text"
+        app:layout_constraintTop_toBottomOf="@id/txFee"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addressFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_tx_info_value_margin_left"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:text="address"
+        app:layout_constraintTop_toBottomOf="@id/addressFromLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/addressToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_address_to"
+        android:textSize="@dimen/dialog_tx_info_text"
+        app:layout_constraintTop_toBottomOf="@id/addressFrom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addressTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_tx_info_value_margin_left"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:text="address"
+        app:layout_constraintTop_toBottomOf="@id/addressToLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/timeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_time"
+        android:textSize="@dimen/dialog_tx_info_text"
+        app:layout_constraintTop_toBottomOf="@id/addressTo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_tx_info_value_margin_left"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:text="00:00:00"
+        app:layout_constraintTop_toBottomOf="@id/addressTo"
+        app:layout_constraintLeft_toRightOf="@id/timeLabel"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/confsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_confs"
+        android:textSize="@dimen/dialog_tx_info_text"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/confs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_tx_info_value_margin_left"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:text="-1"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintLeft_toRightOf="@id/confsLabel"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_height"
+        android:textSize="@dimen/dialog_tx_info_text"
+        app:layout_constraintTop_toBottomOf="@id/confs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dialog_tx_info_value_margin_left"
+        android:textSize="@dimen/dialog_tx_info_text"
+        android:text="-1"
+        app:layout_constraintTop_toBottomOf="@id/confs"
+        app:layout_constraintLeft_toRightOf="@id/heightLabel"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tx_info_tx_hash"
+        android:textSize="@dimen/dialog_tx_info_text"
+        app:layout_constraintTop_toBottomOf="@id/height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        android:textSize="@dimen/dialog_tx_info_text"
+        style="@style/link"
+        app:layout_constraintTop_toBottomOf="@id/txLabel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

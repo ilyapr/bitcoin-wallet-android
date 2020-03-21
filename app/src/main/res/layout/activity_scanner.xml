@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ScannerActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:autoFocusButtonColor="@color/scannerAutoFocusButtonColor"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="@color/scannerFlashButtonColor"
+            app:flashButtonVisible="true"
+            app:frameColor="@color/scannerFrameColor"
+            app:frameCornersSize="@dimen/activity_scanner_frame_corner_size"
+            app:frameCornersRadius="@dimen/activity_scanner_frame_corner_radius"
+            app:frameAspectRatioWidth="1"
+            app:frameAspectRatioHeight="1"
+            app:frameSize="@dimen/activity_scanner_frame_size"
+            app:frameThickness="@dimen/activity_scanner_frame_thickness"
+            app:maskColor="@color/scannerMaskColor" />
+
+    </FrameLayout>
+
+</LinearLayout>

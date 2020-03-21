@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_top_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_left_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_right_percent" />
+
+    <TextView
+        android:id="@+id/addressLabel"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/label_send_title"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/paste"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/amount_label_margin_vertical"
+        android:contentDescription="@string/content_description_paste"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:layout_marginEnd="@dimen/fragment_send_address_paste_margin_horizontal"
+        app:icon="@drawable/content_paste"
+        app:iconPadding="0dp"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintEnd_toStartOf="@+id/sendAddressInputLayout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/addressLabel" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sendAddressInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/amount_label_margin_vertical"
+        android:hint="@string/hint_send_title"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/paste"
+        app:layout_constraintTop_toBottomOf="@id/addressLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sendAddress"
+            android:layout_width="@dimen/fragment_send_address_input_width"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="@dimen/fragment_send_address_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/amountLabel"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fragment_send_amount_label_margin_vertical"
+        android:text="@string/label_send_amount"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintLeft_toRightOf="@id/sendAddressInputLayout"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/sendAddressInputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountBTCInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/amount_label_margin_vertical"
+        android:layout_marginEnd="@dimen/amount_input_margin_next"
+        android:hint="@string/label_BTC"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toStartOf="@id/amountCurrencyInputLayout"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/amountLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountBTC"
+            android:layout_width="@dimen/amount_input_width"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/amount_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountCurrencyInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/amount_label_margin_vertical"
+        android:hint="@string/label_USD"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        android:layout_marginStart="@dimen/amount_input_margin_next"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/amountBTCInputLayout"
+        app:layout_constraintTop_toBottomOf="@id/amountLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountCurrency"
+            android:layout_width="@dimen/amount_input_width"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/amount_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/max"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:text="@string/button_send_max"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@id/amountCurrencyInputLayout"
+        app:layout_constraintTop_toBottomOf="@id/amountCurrencyInputLayout" />
+
+    <TextView
+        android:id="@+id/feeLabel"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fragment_send_fee_label_margin_vertical"
+        android:text="@string/label_tx_fee"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/max" />
+
+    <include
+        android:id="@+id/feeLayout"
+        layout="@layout/layout_fee" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send"
+        style="@style/actionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_send_button_send_margin_vertical"
+        app:icon="@drawable/outline_send_24"
+        app:iconGravity="textEnd"
+        app:iconTint="@android:color/transparent"
+        app:iconTintMode="add"
+        android:text="@string/button_send"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/feeLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

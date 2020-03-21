@@ -1,0 +1,139 @@
+<resources>
+
+    <dimen name="font_size_default">16sp</dimen>
+    <dimen name="font_size_status">14sp</dimen>
+    <dimen name="font_size_action_button">14sp</dimen>
+    <dimen name="font_size_address_type_radio">16sp</dimen>
+
+    <dimen name="activity_splash_margin">80dp</dimen>
+    <dimen name="activity_margin">15dp</dimen>
+    <dimen name="activity_main_navigation_height">70dp</dimen>
+
+    <dimen name="activity_choice_create_restore_gl_title_percent">0.15</dimen>
+    <dimen name="activity_choice_create_restore_button_width">250dp</dimen>
+    <dimen name="activity_choice_create_restore_button_height">60dp</dimen>
+    <dimen name="activity_choice_create_restore_button_margin_top">15dp</dimen>
+
+    <dimen name="activity_address_type_guideline_title_percent">0.12</dimen>
+
+    <dimen name="guideline_activity_top_percent">0.03</dimen>
+    <dimen name="guideline_activity_left_percent">0.2</dimen>
+    <dimen name="guideline_activity_right_percent">0.8</dimen>
+
+    <dimen name="activity_address_type_gl_top_percent">0.03</dimen>
+    <dimen name="activity_address_type_gl_left_percent">0.12</dimen>
+    <dimen name="activity_address_type_gl_right_percent">0.87</dimen>
+    <dimen name="activity_address_type_button_margin">40dp</dimen>
+    <dimen name="activity_address_type_radio_text_size">16sp</dimen>
+
+    <dimen name="address_type_option_margin">16dp</dimen>
+
+    <dimen name="activity_restore_wallet_gl_top_percent">0.03</dimen>
+    <dimen name="activity_restore_wallet_gl_left_percent">0.12</dimen>
+    <dimen name="activity_restore_wallet_gl_right_percent">0.87</dimen>
+
+    <dimen name="activity_restore_wallet_words_title_margin">40dp</dimen>
+    <dimen name="activity_restore_wallet_words_margin">50dp</dimen>
+    <dimen name="activity_restore_wallet_words_width">300dp</dimen>
+    <dimen name="activity_restore_wallet_button_margin">20sp</dimen>
+    <dimen name="activity_restore_wallet_radio_text_size">@dimen/font_size_address_type_radio</dimen>
+
+    <dimen name="activity_seed_gl_top_percent">0.03</dimen>
+    <dimen name="activity_seed_gl_left_percent">0.04</dimen>
+    <dimen name="activity_seed_wallet_gl_right_percent">0.96</dimen>
+    <dimen name="activity_seed_margin_top">15dp</dimen>
+    <dimen name="activity_seed_margin_top_large">40dp</dimen>
+
+    <dimen name="activity_pin_gl_top_percent">0.04</dimen>
+    <dimen name="activity_pin_gl_left_percent">0.12</dimen>
+    <dimen name="activity_pin_gl_right_percent">0.87</dimen>
+
+    <dimen name="activity_main_gl_top_percent">0.03</dimen>
+    <dimen name="activity_main_gl_left_percent">0.04</dimen>
+    <dimen name="activity_main_gl_right_percent">0.96</dimen>
+
+    <dimen name="fragment_receive_gl_amount_percent">0.2</dimen>
+
+    <dimen name="pin_bullet_width">20dp</dimen>
+    <dimen name="pin_bullet_height">20dp</dimen>
+    <dimen name="pin_bullet_margin">7dp</dimen>
+    <dimen name="pin_keyboard_button_size">80dp</dimen>
+    <dimen name="pin_keyboard_button_margin">5dp</dimen>
+    <dimen name="pin_keyboard_button_margin_top">20dp</dimen>
+    <dimen name="pin_keyboard_button_text">18sp</dimen>
+
+    <dimen name="activity_scanner_frame_corner_size">50dp</dimen>
+    <dimen name="activity_scanner_frame_corner_radius">0dp</dimen>
+    <dimen name="activity_scanner_frame_size">0.75</dimen>
+    <dimen name="activity_scanner_frame_thickness">2dp</dimen>
+
+    <dimen name="fragment_balance_margin_start">5dp</dimen>
+    <dimen name="fragment_balance_margin_top">20dp</dimen>
+    <dimen name="fragment_balance_text">22sp</dimen>
+    <dimen name="fragment_balance_refresh_margin_horizontal">10dp</dimen>
+    <dimen name="fragment_balance_tx_separator_height">30dp</dimen>
+    <dimen name="fragment_balance_currency_margin_top">7dp</dimen>
+
+    <dimen name="fragment_balance_fab_margin_bottom">90dp</dimen>
+    <dimen name="fragment_balance_fab_margin_end">20dp</dimen>
+    <dimen name="fragment_balance_recycler_margin_bottom">200dp</dimen>
+
+    <dimen name="fragment_receive_qr_size">220dp</dimen>
+    <dimen name="fragment_receive_qr_margin">8dp</dimen>
+    <dimen name="fragment_receive_qr_hint_text_size">14sp</dimen>
+    <dimen name="fragment_receive_address_label_margin_top">40dp</dimen>
+    <dimen name="fragment_receive_address_width">280dp</dimen>
+    <dimen name="fragment_receive_address_text_size">14sp</dimen>
+    <dimen name="fragment_receive_address_margin_bottom">8dp</dimen>
+    <dimen name="fragment_receive_address_copy_margin">8dp</dimen>
+
+    <dimen name="amount_label_margin_vertical">15dp</dimen>
+    <dimen name="amount_input_margin_next">15dp</dimen>
+    <dimen name="fragment_send_address_paste_margin_horizontal">10dp</dimen>
+    <dimen name="fragment_send_address_input_width">250dp</dimen>
+    <dimen name="fragment_send_address_text_size">12sp</dimen>
+    <dimen name="amount_input_width">120dp</dimen>
+    <dimen name="fragment_send_amount_label_margin_vertical">10dp</dimen>
+    <dimen name="amount_text_size">@dimen/font_size_default</dimen>
+    <dimen name="fragment_send_fee_label_margin_vertical">15dp</dimen>
+    <dimen name="fragment_send_button_send_margin_vertical">30dp</dimen>
+
+    <dimen name="item_tx_margin_horizontal">10dp</dimen>
+    <dimen name="item_tx_amount_text">@dimen/font_size_default</dimen>
+    <dimen name="item_tx_font_size">12sp</dimen>
+    <dimen name="item_tx_time_margin_vertical">8dp</dimen>
+    <dimen name="item_tx_time_text">@dimen/item_tx_font_size</dimen>
+    <dimen name="item_tx_block_text">@dimen/item_tx_font_size</dimen>
+    <dimen name="item_tx_status_text">@dimen/item_tx_font_size</dimen>
+    <dimen name="item_tx_image_margin">5dp</dimen>
+    <dimen name="item_tx_delimiter_height">1dp</dimen>
+    <dimen name="item_tx_delimiter_margin">10dp</dimen>
+
+    <dimen name="dialog_scanner_send_margin">7dp</dimen>
+    <dimen name="dialog_scanner_send_address_margin_vertical">12dp</dimen>
+    <dimen name="dialog_scanner_send_address_text_size">16sp</dimen>
+    <dimen name="dialog_scanner_send_delimiter_height">1dp</dimen>
+    <dimen name="dialog_scanner_send_margin_vertical">20dp</dimen>
+    <dimen name="dialog_scanner_send_fee_margin_vertical">30dp</dimen>
+    <dimen name="dialog_scanner_send_button_send_margin">10dp</dimen>
+    <dimen name="dialog_about_margin">10dp</dimen>
+    <dimen name="dialog_about_text_margin">10dp</dimen>
+
+    <dimen name="dialog_simple_margin">30dp</dimen>
+    <dimen name="dialog_simple_button_margin">10dp</dimen>
+
+    <dimen name="dialog_tx_info_margin">7dp</dimen>
+    <dimen name="dialog_tx_info_first_row_margin_top">15dp</dimen>
+    <dimen name="dialog_tx_info_value_margin_left">8dp</dimen>
+    <dimen name="dialog_tx_info_text">@dimen/font_size_default</dimen>
+
+    <dimen name="dialog_send_margin">7dp</dimen>
+    <dimen name="dialog_send_button_margin">10dp</dimen>
+    <dimen name="dialog_send_address_text">16sp</dimen>
+    <dimen name="dialog_send_address_margin_top">12dp</dimen>
+
+    <dimen name="layout_fee_margin_top">20dp</dimen>
+    <dimen name="layout_fee_margin">4dp</dimen>
+    <dimen name="layout_fee_text">16sp</dimen>
+    <dimen name="layout_fee_radio_text_size">@dimen/font_size_address_type_radio</dimen>
+</resources>

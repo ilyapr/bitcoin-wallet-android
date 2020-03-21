@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.MainActivity"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_top_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_left_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_right_percent" />
+
+    <LinearLayout
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight">
+
+        <TextView
+            android:id="@+id/networkInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status"
+            style="@style/status" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fragment_balance_margin_start"
+            android:text="synced"
+            style="@style/status"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/balance"
+        android:text="@string/label_balance"
+        app:layout_constraintTop_toBottomOf="@id/statusLabel"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />
+
+    <TextView
+        android:id="@+id/balanceCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/balanceCurrency"
+        android:text="@string/label_balance_currency"
+        app:layout_constraintTop_toBottomOf="@id/balance"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        app:layout_constraintTop_toTopOf="@id/balanceCurrency"
+        app:layout_constraintBottom_toBottomOf="@id/balanceCurrency"
+        app:layout_constraintLeft_toRightOf="@id/balanceCurrency"
+        android:layout_marginStart="@dimen/fragment_balance_refresh_margin_horizontal"
+        android:contentDescription="@string/content_description_refresh"
+        android:src="@drawable/baseline_cached_24" />
+
+    <View
+        android:id="@+id/transactions_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_balance_tx_separator_height"
+        app:layout_constraintTop_toBottomOf="@id/balanceCurrency" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transactions_separator"
+        android:paddingBottom="@dimen/fragment_balance_recycler_margin_bottom"
+        android:id="@+id/transactions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/scan"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/colorAccent"
+        android:layout_marginBottom="@dimen/fragment_balance_fab_margin_bottom"
+        android:layout_marginEnd="@dimen/fragment_balance_fab_margin_end"
+        app:layout_constraintRight_toRightOf="@id/layout"
+        app:layout_constraintBottom_toBottomOf="@id/layout"
+        app:srcCompat="@drawable/qrcode_scan"
+        app:tint="@color/button_scan_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

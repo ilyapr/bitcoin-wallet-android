@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_top_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_left_percent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/activity_main_gl_right_percent" />
+
+    <TextView
+        android:id="@+id/amountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_request_amount"
+        android:gravity="center_horizontal"
+        style="@style/title"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountBTCInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/amount_label_margin_vertical"
+        android:layout_marginEnd="@dimen/amount_input_margin_next"
+        android:hint="@string/label_BTC"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:layout_constraintEnd_toStartOf="@id/amountCurrencyInputLayout"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/amountLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountBTC"
+            android:layout_width="@dimen/amount_input_width"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/amount_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amountCurrencyInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/amount_label_margin_vertical"
+        android:hint="@string/label_USD"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        android:layout_marginStart="@dimen/amount_input_margin_next"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintStart_toEndOf="@id/amountBTCInputLayout"
+        app:layout_constraintTop_toBottomOf="@id/amountLabel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountCurrency"
+            android:layout_width="@dimen/amount_input_width"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/amount_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/amountGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/fragment_receive_gl_amount_percent" />
+
+    <TextView
+        android:id="@+id/qrHint"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountGuideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/fragment_receive_qr_margin"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/fragment_receive_qr_hint_text_size"
+        android:text="@string/label_qr_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/addressQR"
+        android:layout_width="@dimen/fragment_receive_qr_size"
+        android:layout_height="@dimen/fragment_receive_qr_size"
+        app:layout_constraintTop_toBottomOf="@id/qrHint"
+        app:layout_constraintLeft_toRightOf="@id/copyAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/fragment_receive_qr_margin"
+        android:contentDescription="@string/content_description_qr"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/receiveAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/label_receive_address"
+        style="@style/title"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/addressQR"
+        android:layout_marginTop="@dimen/fragment_receive_address_label_margin_top" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/copyAddress"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fragment_receive_address_copy_margin"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        app:icon="@drawable/outline_file_copy_24"
+        app:iconPadding="0dp"
+        app:iconGravity="textStart"
+        android:contentDescription="@string/content_description_copy"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@+id/address"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/receiveAddressLabel" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="@dimen/fragment_receive_address_width"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fragment_receive_address_text_size"
+        android:text="address"
+        android:textColor="@color/colorAccent"
+        android:layout_marginBottom="@dimen/fragment_receive_address_margin_bottom"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@id/copyAddress"
+        app:layout_constraintBottom_toBottomOf="@id/copyAddress"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

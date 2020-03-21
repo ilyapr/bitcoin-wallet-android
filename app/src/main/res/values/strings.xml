@@ -1,0 +1,147 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Bitcoin</string>
+    <string name="activity_restore_wallet">Restore wallet</string>
+    <string name="activity_backup_wallet">Backup wallet</string>
+    <string name="activity_request_pin">Enter PIN code</string>
+    <string name="activity_pin_code">PIN code</string>
+    <string name="activity_address_type">Choose address type</string>
+    <string name="activity_scanner">Send</string>
+    <string name="activity_seed">Recovery words</string>
+    <string name="wallet_create_restore">Would you like to create a new wallet or recover existing one?</string>
+    <string name="wallet_create">create a new wallet</string>
+    <string name="wallet_restore">restore existing wallet</string>
+    <string name="wallet_recovery_title">Please write down your address type and secret words below to be able to recover your wallet</string>
+    <string name="wallet_recovery_address">Address type:</string>
+    <string name="wallet_recovery_words">Words:</string>
+    <string name="recover_wallet_hint">Please enter words to recover your wallet:</string>
+    <string name="recover_wallet_empty_seed">Please enter words in text field above</string>
+    <string name="recover_wallet_invalid_seed">Recovery words are incorrect, impossible to restore wallet</string>
+    <string name="recover_warning">If you proceed this operation, your current wallet will be erased. Make sure you have secret words saved</string>
+    <string name="recover_warning_ok">proceed</string>
+    <string name="title_choose_address">Choose wallet address type</string>
+
+    <string name="content_description_splash">Bitcoin</string>
+    <string name="content_description_refresh">Refresh</string>
+    <string name="content_description_tx_status">Status</string>
+    <string name="content_description_qr">QR</string>
+    <string name="content_description_copy">Copy</string>
+    <string name="content_description_paste">Paste</string>
+    <string name="content_description_bullet">*</string>
+    <string name="content_description_backspace">Backspace</string>
+
+    <string name="notification_channel_name">₿itcoin</string>
+    <string name="notification_channel_description">₿itcoin Wallet</string>
+    <string name="notification_tx_received_title">Incoming transaction</string>
+    <string name="notification_tx_received_content">%1$s ₿TC received</string>
+
+    <string name="menu_change_pin">Change PIN</string>
+    <string name="menu_backup_wallet">Backup wallet</string>
+    <string name="menu_restore_wallet">Restore wallet</string>
+    <string name="menu_about">About</string>
+
+    <string name="pin_title_new">Please enter your new PIN code</string>
+    <string name="pin_title_confirm">Please enter your PIN code again</string>
+    <string name="pin_title_incorrect">PIN doesn\'t match!</string>
+    <string name="pin_title_enter">Please enter your PIN code</string>
+    <string name="pin_title_auth_error">Wrong PIN. Try again!</string>
+    <string name="pin_title_abort">Cancelled</string>
+
+    <string name="pin_keyboard_0">0</string>
+    <string name="pin_keyboard_1">1</string>
+    <string name="pin_keyboard_2">2</string>
+    <string name="pin_keyboard_3">3</string>
+    <string name="pin_keyboard_4">4</string>
+    <string name="pin_keyboard_5">5</string>
+    <string name="pin_keyboard_6">6</string>
+    <string name="pin_keyboard_7">7</string>
+    <string name="pin_keyboard_8">8</string>
+    <string name="pin_keyboard_9">9</string>
+
+    <string name="address_type_legacy">Legacy, P2PKH (BIP 44)</string>
+    <string name="address_type_segwit_compatible">SegWit-compatible, P2WPKH (BIP 49)</string>
+    <string name="address_native_segwit">SegWit native, Bech32 (BIP 84)</string>
+
+    <string name="button_next">Next</string>
+    <string name="button_done">Done</string>
+    <string name="amount_BTC">%1$s ₿TC</string>
+    <string name="currency_data_unavailable">N/A</string>
+
+    <string name="permission_not_granted">Permission is not granted!</string>
+    <string name="title_balance">Balance</string>
+    <string name="title_receive">Receive</string>
+    <string name="title_send">Send</string>
+    <string name="home_balance">Balance: %1$s ₿TC</string>
+    <string name="home_balance_currency">%1$s USD</string>
+    <string name="transaction_amount">%1$s ₿TC</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="network_info">%1$s, block %2$s,</string>
+    <string name="block_not_available">0</string>
+    <string name="block_not_mempool">mempool</string>
+    <string name="status">Status:</string>
+    <string name="status_synced">synced</string>
+    <string name="status_not_synced">not synced</string>
+    <string name="status_syncing">syncing %1$s%%</string>
+    <string name="tx_self_transfer">self-transfer</string>
+    <string name="tx_block">block: %1$s</string>
+    <string name="tx_status_pending">pending</string>
+    <string name="tx_status_unconfirmed">unconfirmed</string>
+    <string name="tx_status_confs" tools:ignore="PluralsCandidate">%1$d conf.</string>
+    <string name="tx_status_confs_threshold">6+ conf.</string>
+
+    <string name="address_error">Incorrect ₿itcoin address</string>
+
+    <string name="permissions_error">Unable to acquire camera permissions</string>
+    <string name="camera_init_error">Camera initialization error: %1$s</string>
+    <string name="qr_error">Error while reading QR code</string>
+    <string name="dialog_send">Confirm to send %1$s ₿TC to address</string>
+
+    <string name="error_send_empty_output">Insufficient\nbalance</string>
+    <string name="error_dust">Dust</string>
+    <string name="error_invalid_address">Address is not valid</string>
+
+    <string name="label_balance">Balance</string>
+    <string name="label_balance_currency">0.00 USD</string>
+    <string name="label_receive_address">Your ₿itcoin address:</string>
+    <string name="label_qr_hint">Have this code scanned by sender</string>
+    <string name="label_request_amount">Request amount (optional)</string>
+    <string name="label_BTC">₿TC</string>
+    <string name="label_USD">USD</string>
+    <string name="label_send_title">Send to</string>
+    <string name="hint_send_title">₿itcoin address</string>
+    <string name="label_send_amount">Amount</string>
+    <string name="button_send_max">Max.</string>
+    <string name="label_tx_fee">Priority</string>
+    <string name="label_tx_fee_text">Fee:</string>
+    <string name="label_tx_fee_low">Low</string>
+    <string name="label_tx_fee_medium">Medium</string>
+    <string name="label_tx_fee_high">High</string>
+    <string name="label_tx_fee_amount_btc_no_fee">N/A</string>
+    <string name="label_tx_fee_amount_currency">(%1$s USD)</string>
+    <string name="label_tx_fee_amount_currency_no_fee">(0.00 USD)</string>
+    <string name="format_currency">%1$.2f</string>
+    <string name="button_send">Send</string>
+    <string name="button_close">Close</string>
+    <string name="error_no_address">Fill address</string>
+    <string name="error_no_amount">Fill amount</string>
+    <string name="error_fill_all">Fill all fields</string>
+    <string name="dialog_transaction_sent">Transaction sent!</string>
+    <string name="dialog_transaction_failed">Transaction FAILED!</string>
+    <string name="dialog_pin_code_changed">PIN changed successfully</string>
+
+    <string name="label_tx_info_title">Transaction info</string>
+    <string name="label_tx_info_amount">Amount:</string>
+    <string name="label_tx_info_fee">Fee:</string>
+    <string name="label_tx_info_address_from">From:</string>
+    <string name="label_tx_info_address_to">To:</string>
+    <string name="label_tx_info_time">Time:</string>
+    <string name="label_tx_info_confs">Confirmations:</string>
+    <string name="label_tx_info_height">Height:</string>
+    <string name="label_tx_info_tx_hash">Transaction hash</string>
+    <string name="label_tx_not_available">N/A</string>
+    <string name="label_tx_status_pending">PENDING</string>
+
+    <string name="dialog_about_title">₿itcoin Wallet v1.0</string>
+    <string name="dialog_about_framework">Based on horizontalsystems.io BitcoinKit</string>
+    <string name="dialog_about_description">Author: Ilya. If you like the wallet, feel free to donate:</string>
+    <string name="dialog_about_address">3HXd5qs98jRTN2JFBi9VDu8MSjqQXUhLsg</string>
+</resources>

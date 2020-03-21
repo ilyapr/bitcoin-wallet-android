@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.bitzhash.wallet.bitcoin.ui.BalanceFragment"
+        android:label="@string/title_balance"
+        tools:layout="@layout/fragment_balance">
+
+        <action
+            android:id="@+id/send_from_scanner"
+            app:destination="@id/navigation_send">
+            <argument android:name="address" app:argType="string" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_receive"
+        android:name="com.bitzhash.wallet.bitcoin.ui.ReceiveFragment"
+        android:label="@string/title_receive"
+        tools:layout="@layout/fragment_receive" />
+
+    <fragment
+        android:id="@+id/navigation_send"
+        android:name="com.bitzhash.wallet.bitcoin.ui.SendFragment"
+        android:label="@string/title_send"
+        tools:layout="@layout/fragment_send">
+
+        <argument android:name="address" app:argType="string" android:defaultValue="0" />
+
+    </fragment>
+
+</navigation>
