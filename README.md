@@ -4,8 +4,8 @@ Bitcoin SPV wallet implementation for Android. Creating, backing up and restorin
 
 ### Download Android APK
 
-* [Production APK - Mainnet](https://github.com/ilyapr/bitcoin-wallet-android/raw/master/app/release/app-release.apk)
-* [Debug APK - Testnet](https://github.com/ilyapr/bitcoin-wallet-android/raw/master/app/debug/app-debug.apk)
+* [Production APK - Mainnet](https://github.com/ilyapr/bitcoin-wallet-android/raw/master/apk/release/app-release.apk)
+* [Debug APK - Testnet](https://github.com/ilyapr/bitcoin-wallet-android/raw/master/apk/debug/app-debug.apk)
 
 ### Screenshots
 
