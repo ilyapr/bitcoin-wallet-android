@@ -141,7 +141,7 @@
     <string name="label_tx_status_pending">PENDING</string>
 
     <string name="dialog_about_title">₿itcoin Wallet v1.0</string>
-    <string name="dialog_about_framework">Based on horizontalsystems.io BitcoinKit</string>
+    <string name="dialog_about_framework">Based on horizontalsystems.io BitcoinKit. Logo vector created by starline - www.freepik.com</string>
     <string name="dialog_about_description">Author: Ilya. If you like the wallet, feel free to donate:</string>
     <string name="dialog_about_address">3HXd5qs98jRTN2JFBi9VDu8MSjqQXUhLsg</string>
 </resources>
